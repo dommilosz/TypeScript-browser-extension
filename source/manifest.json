@@ -1,0 +1,29 @@
+{
+  "name": "Typescript Extension Template",
+  "version": "0.0.0",
+  "description": "Typescript Template extension",
+  "homepage_url": "https://github.com/dommilosz/typescript-browser-extension-template",
+  "manifest_version": 2,
+  "applications": {
+	"gecko": {
+	  "id": "ts-extension-template@dommilosz"
+	}
+  },
+  "permissions": [
+
+  ],
+  "options_ui": {
+	"chrome_style": true,
+	"page": "options.html"
+  },
+  "browser_action": {
+	"default_title": "Example extension",
+	"default_popup": "popup.html"
+  },
+  "background": {
+	"persistent": true,
+	"scripts": [
+	  "background.ts"
+	]
+  }
+}
